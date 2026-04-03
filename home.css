@@ -1,0 +1,91 @@
+/* Base */
+body {
+    font-family: 'Noto Serif KR', serif;
+    color: #222;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #ffffff, #f7f4ee);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #a67c2d; /* 더 고급스러운 골드 */
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #a67c2d;
+    transform: translateY(-1px);
+}
+
+/* Main content */
+.content {
+    max-width: 820px;
+    margin: 80px auto;
+    padding: 0 24px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.content h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 22px;
+    font-size: 1.8rem;
+    color: #a67c2d;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
